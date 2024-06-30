@@ -1,0 +1,49 @@
+<RelativeLayout
+    name="container1"
+    horizontalSizePolicy="match_parent"
+    verticalSizePolicy="match_parent"
+    padding="16px 16px 16px 16px"
+    backgroundColor="#ff2B2D30"
+    p_layoutAlignment="left|top">
+
+    <Label
+        name="status"
+        text="Click add to add a new triangle!"
+        fontSize="18dp"
+        fontColor="#ffCCCCCC"
+        backgroundColor="#ff4E5157"
+        padding="16px 10px 16px 10px"
+        script="RoundedBackground.lua"
+        p_layoutAlignment="top|left" />
+
+    <Label
+        name="btnRemove"
+        text="Remove"
+        fontSize="18dp"
+        fontColor="#ffCCCCCC"
+        backgroundColor="#ff4E5157"
+        padding="16px 10px 16px 10px"
+        script="RoundedBackground.lua"
+        p_layoutAlignment="top|right" />
+
+    <Label
+        name="btnAdd"
+        text="Add"
+        fontSize="18dp"
+        fontColor="#ffCCCCCC"
+        backgroundColor="#ff4E5157"
+        padding="16px 10px 16px 10px"
+        script="RoundedBackground.lua"
+        p_toLeftOf="btnRemove"
+        p_marginRight="8px" />
+
+    <VisualizerWidget
+        name="visualizer"
+        horizontalSizePolicy="match_parent"
+        verticalSizePolicy="match_parent"
+        backgroundColor="#ff1E1F22"
+        script="RoundedBackground.lua"
+        p_marginTop="16px"
+        p_below="status" />
+
+</RelativeLayout>
